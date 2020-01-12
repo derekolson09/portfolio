@@ -1,6 +1,7 @@
 // Imports
 @import 'colors';
 
+
 // Mixins
 @mixin easeOut {
     transition: all 0.5s ease-out;
@@ -50,6 +51,15 @@
             }
         }   
     }
+}
+
+// Hide elements
+.hidden {
+    visibility: hidden;
+}
+
+.shown {
+    visibility: show;
 }
 
 // Menu Overlay
@@ -107,6 +117,16 @@
             background: url('../img/professional_portrait.png') no-repeat;
             border-radius: 50%;
             border: solid 3px $secondary-color
+        }
+
+        .portrait-sm {
+            width: 100px;
+            height: 100px;
+            background-size: contain;
+            background: url('../image/professional_portrait_sm.png') no-repeat;
+            border-radius: 50%;
+            border: solid 3px $secondary-color;
+            visibility: hidden;
         }
     }
 

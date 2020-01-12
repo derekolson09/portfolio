@@ -25,6 +25,12 @@
       transform: rotate(-45deg) translate(7px, -6px);
       background: red; }
 
+.hidden {
+  visibility: hidden; }
+
+.shown {
+  visibility: show; }
+
 .menu {
   position: fixed;
   top: 0;
@@ -63,6 +69,14 @@
       background: url("../img/professional_portrait.png") no-repeat;
       border-radius: 50%;
       border: solid 3px #E9F1EF; }
+    .menu-branding .portrait-sm {
+      width: 100px;
+      height: 100px;
+      background-size: contain;
+      background: url("../image/professional_portrait_sm.png") no-repeat;
+      border-radius: 50%;
+      border: solid 3px #E9F1EF;
+      visibility: hidden; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
     transition: all 0.5s ease-out; }
@@ -97,6 +111,37 @@
 
 .nav-item:nth-child(6) {
   transition-delay: 1.2s; }
+
+@media screen and (max-width: 768px) {
+  main {
+    align-items: center;
+    text-align: center; }
+  .lg-heading {
+    line-height: 1;
+    margin-bottom: 1rem; }
+  ul.menu-nav,
+  div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0; }
+    ul.menu-nav.show,
+    div.menu-branding.show {
+      transform: translate3d(0, 0, 0); }
+  .menu-nav {
+    height: 75vh;
+    transform: translate3d(-100%, 0, 0);
+    font-size: 24px; }
+  .menu-branding {
+    height: 25vh;
+    transform: translate3d(100%, 0, 0); }
+  .portrait {
+    visibility: hidden; }
+  .portrait_sm {
+    visibility: visible; } }
+
+@media screen and (max-width: 500px) {
+  main#Home h1 {
+    margin-top: 10vh; } }
 
 body {
   background: #689185;
