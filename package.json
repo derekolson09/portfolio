@@ -1,0 +1,16 @@
+{
+  "name": "portfolio-website",
+  "version": "1.0.0",
+  "description": "Derek Olson's Responsive Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Hello test\"",
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "author": "Derek Olson",
+  "license": "MIT",
+  "dependencies": {
+    "gh-pages": "^2.2.0",
+    "node-sass": "^4.13.0"
+  }
+}
