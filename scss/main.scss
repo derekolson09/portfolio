@@ -34,6 +34,9 @@ h3 {
     }
 }
 
+h6 {
+    font-size: 1rem;
+}
 header {
     position: fixed;
     z-index: 2;
@@ -75,6 +78,8 @@ main {
 }
 
 .about-info {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     display: grid;
     grid-template-areas: 
     'bioimage bio bio'
@@ -114,10 +119,44 @@ main {
 .project-list {
     display: grid;
     grid-template-areas: 
-    'project-1 project-2 project-3'
-    'project-4 project-5 project-6';
+    'project1 project2 project3'
+    'project4 project5 project6';
 
     grid-template-columns: repeat(3, 1fr);
+    .proj-1 {
+        grid-area: project1;
+        }
+    .proj-2 {
+        grid-area: project2
+    }
+    .proj-3 {
+        grid-area: project3
+    }
+    .proj-4 {
+        grid-area: project4
+    }
+    .proj-5 {
+        grid-area: project5
+    }
+    .proj-6 {
+        grid-area: project6
+    }
+    .proj-7 {
+        grid-area: project7
+    }
+    .proj-8 {
+        grid-area: project8
+    }
+    .proj-9 {
+        grid-area: project9
+    }
+    
+    .proj {
+        background: lighten($primary-color, 10);
+        padding: 0.5rem;
+        border-bottom: $secondary-color 5px solid;
+        margin: 0.25rem;
+    }
 }
 
 #main-footer {

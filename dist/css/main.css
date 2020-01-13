@@ -138,6 +138,9 @@ h3 {
     padding: 0.2rem 1rem;
     background: #739b8f; }
 
+h6 {
+  font-size: 1rem; }
+
 header {
   position: fixed;
   z-index: 2;
@@ -163,6 +166,8 @@ main {
       margin-top: 20vh; }
 
 .about-info {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   display: grid;
   grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
   grid-template-columns: repeat(3, 1fr); }
@@ -188,8 +193,31 @@ main {
 
 .project-list {
   display: grid;
-  grid-template-areas: 'project-1 project-2 project-3' 'project-4 project-5 project-6';
+  grid-template-areas: 'project1 project2 project3' 'project4 project5 project6';
   grid-template-columns: repeat(3, 1fr); }
+  .project-list .proj-1 {
+    grid-area: project1; }
+  .project-list .proj-2 {
+    grid-area: project2; }
+  .project-list .proj-3 {
+    grid-area: project3; }
+  .project-list .proj-4 {
+    grid-area: project4; }
+  .project-list .proj-5 {
+    grid-area: project5; }
+  .project-list .proj-6 {
+    grid-area: project6; }
+  .project-list .proj-7 {
+    grid-area: project7; }
+  .project-list .proj-8 {
+    grid-area: project8; }
+  .project-list .proj-9 {
+    grid-area: project9; }
+  .project-list .proj {
+    background: #85a79d;
+    padding: 0.5rem;
+    border-bottom: #d7e4e1 5px solid;
+    margin: 0.25rem; }
 
 #main-footer {
   text-align: center;
@@ -254,9 +282,17 @@ main {
     margin-top: 10vh; }
   main#about {
     padding-top: 3rem !important; }
+  main#work h1 {
+    font-size: 4rem; }
   .about-info {
     margin-top: 1rem;
+    margin-bottom: 0;
     grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
+    grid-template-columns: 1fr; }
+  .project-list {
+    margin-top: 1rem;
+    margin-bottom: 0;
+    grid-template-areas: 'project1' 'project2' 'project3' 'project4' 'project5' 'project6';
     grid-template-columns: 1fr; }
   .bio {
     margin-top: 1rem; } }

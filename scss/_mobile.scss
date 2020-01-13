@@ -71,9 +71,15 @@
         padding-top: 3rem !important;
     }
 
+    main#work {
+        h1 {
+            font-size: 4rem;
+        }
+    }
+
     .about-info {
         margin-top: 1rem;
-
+        margin-bottom: 0;
         grid-template-areas: 
         'bioimage'
         'bio'
@@ -81,6 +87,18 @@
         'job2'
         'job3';
 
+        grid-template-columns: 1fr;
+    }
+    .project-list {
+        margin-top: 1rem;
+        margin-bottom: 0;
+        grid-template-areas: 
+        'project1'
+        'project2'
+        'project3'
+        'project4'
+        'project5'
+        'project6';
         grid-template-columns: 1fr;
     }
 
