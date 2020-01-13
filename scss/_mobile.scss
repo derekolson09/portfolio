@@ -5,7 +5,13 @@
 
 // Desktops & Laptops
 @include mediaLg {
+    main {
+        padding-top: 1rem !important;
+    }
 
+    .bio {
+        padding-left: 2rem;
+    }
 }
 
 // Tablets & Small Laptops
@@ -13,6 +19,7 @@
     main {
         align-items: center;
         text-align: center;
+        padding-top: 1rem !important;
     }
 
     .lg-heading {
@@ -44,11 +51,14 @@
     }
     .portrait {
         visibility: hidden;
+        width: 0 !important;
+        height: 0 !important;
     }
 
     .portrait_sm {
-        visibility: visible;
+        visibility: visible !important;
     }
+
 }
 
 // Smartphones
@@ -56,4 +66,26 @@
     main#Home h1 {
         margin-top: 10vh;
     }
+
+    main#about {
+        padding-top: 3rem !important;
+    }
+
+    .about-info {
+        margin-top: 1rem;
+
+        grid-template-areas: 
+        'bioimage'
+        'bio'
+        'job1'
+        'job2'
+        'job3';
+
+        grid-template-columns: 1fr;
+    }
+
+    .bio {
+        margin-top: 1rem;
+    }
+
 }

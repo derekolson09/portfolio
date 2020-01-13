@@ -1,7 +1,6 @@
 //Imports
 @import 'header';
 @import 'media';
-@import 'mobile';
 
 // Boiler plate
 
@@ -50,7 +49,7 @@ a {
 // Main Container
 main {
     padding: 4rem;
-    height: 100%;
+    min-height: calc(100vh - 60px);
 
     .icons {
         margin-top: 1rem;
@@ -75,6 +74,59 @@ main {
     }
 }
 
+.about-info {
+    display: grid;
+    grid-template-areas: 
+    'bioimage bio bio'
+    'job1 job2 job3';
+    grid-template-columns: repeat(3, 1fr);
+
+    .bio-image {
+        grid-area: bioimage;
+        margin: auto;
+        border-radius: 50%;
+        border: solid 3px $secondary-color
+    }
+    
+    .bio {
+        grid-area: bio;
+        font-size: 1.5rem;
+    }
+
+    .job-1 {
+        grid-area: job1;
+        }
+    .job-2 {
+        grid-area: job2
+    }
+    .job-3 {
+        grid-area: job3
+    }
+    
+    .job {
+        background: lighten($primary-color, 10);
+        padding: 0.5rem;
+        border-bottom: $secondary-color 5px solid;
+        margin: 0.25rem;
+    }
+}
+
+.project-list {
+    display: grid;
+    grid-template-areas: 
+    'project-1 project-2 project-3'
+    'project-4 project-5 project-6';
+
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#main-footer {
+    text-align: center;
+    padding: 1rem;
+    color: $secondary-color;
+    background: $quartenary-color;
+    height: 60px;
+}
 
 // Color classes
 .primary-color {
@@ -96,3 +148,5 @@ main {
 .accent-color {
     color: $accent-color;
 }
+
+@import 'mobile';
