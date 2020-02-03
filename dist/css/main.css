@@ -112,6 +112,32 @@
 .nav-item:nth-child(6) {
   transition-delay: 1.2s; }
 
+.portfolio_prev,
+.IDSDocsite_prev,
+.pythontimer_prev,
+.contactkeeper_prev,
+.gitindex_prev {
+  width: 290px;
+  height: 190px;
+  background-size: contain;
+  border-radius: 25%;
+  border: solid 3px #d7e4e1; }
+
+.portfolio_prev {
+  background: url("../img/portfoliowebsite.png") no-repeat; }
+
+.IDSDocsite_prev {
+  background: url("../img/IDSdocsite.png") no-repeat; }
+
+.pythontimer_prev {
+  background: url("../img/pythontimer.png") no-repeat; }
+
+.contactkeeper_prev {
+  background: url("../img/contactkeeper.png") no-repeat; }
+
+.gitindex_prev {
+  background: url("../img/gitindex.png") no-repeat; }
+
 body {
   background: #689185;
   height: 100%;
