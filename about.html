@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js/reroute.js"></script>
     <link rel="stylesheet" href="css/main.css">
     <title>Derek Olson | About</title>
 </head>
@@ -18,35 +19,85 @@
         </div>
         <nav class="menu">
             <div class="menu-branding">
-                <div class="portrait">
-
-                </div>
+                <div class="portrait"></div>
+                <div class="portrait_sm"></div>
             </div>
 
             <ul class="menu-nav">
                 <li class="nav-item">
-                    <a href="/dist/index.html" class="nav-link">
+                    <a href="./index.html" class="nav-link">
                         Home
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="/dist/about.html" class="nav-link" id="active">
+                    <a href="./about.html" class="nav-link" id="active">
                         About Me
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="/dist/work.html" class="nav-link">
+                    <a href="./work.html" class="nav-link">
                         My Work
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="/dist/contact.html" class="nav-link">
+                    <a href="./contact.html" class="nav-link">
                         Contact
                     </a>
                 </li>
             </ul>
     </header>
+    <main id="about">
+        <h1 class="lg-heading secondary-color">
+            About
+            <span class="quartenary-color">Me</span>
+        </h1>
+        <h2 class="sm-heading secondary-color">
+            A little bit about me...
+        </h2>
+        <div class="about-info">
+            <img src="./img/professional_portrait.png" alt="portrait image" class="bio-image">
+            <div class="bio">
+                <h3 class="text-secondary">BIO</h3>
+                <p>
+                    I am a software developer for projects of any size. But not only that, I am also a pianist and
+                    digital artist.
+                    I have done extensive work in MSSQLServer, Python and Java. I have also worked with the webstack
+                    (HTML, CSS, Javascript) and various frameworks therein.
+                    To boil myself down to two adjectives, I am a problem solver and a creator.
+                </p>
+            </div>
 
+            <div class="job job-1">
+                <h3>Interject Data Systems - 2.5 years</h3>
+                <h6>Database Developer</h6>
+                Worked extensively in SQL Server writing complex dynamic and T-SQL stored procedures. Wrote python and
+                powershell scripts to help automate away different tasks. Utilized javascript ruby and git to build and
+                maintain the company's documentation website. Was tasked with training and onboarding new interns and
+                employees.
+            </div>
+            <div class="job job-2">
+                <h3>Oregon SQL - 2 Events</h3>
+                <h6>Logistics and Registration Prep Coordinator</h6>
+                Responsible for creating and designing name badges, preparing data for over five hundred event guests
+                (to pre-print all badges).
+                Made certain taht all needed materials (signage, posters, vendor gifts etc.) were transported to the
+                event location.
+                Conducted registration counts and that data was properly gathered during the event about attendance.
+            </div>
+            <div class="job job-3">
+                <h3>Red Robin - 2 years</h3>
+                <h6>Line Cook - Team Lead</h6>
+                Ensured customer satisfaction with all meals produced from within the kitchen. Doublechecked all meals
+                for safety standards and presentation standards.
+                Was tasked with training and onboarding new employees. Made certain that the kitchen was sanitized and
+                up to health code at all times throughout tenure.
+            </div>
+
+    </main>
+
+    <footer id="main-footer">
+        Copyright &copy; 2020
+    </footer>
     <script src="js/main.js"></script>
 </body>
 
