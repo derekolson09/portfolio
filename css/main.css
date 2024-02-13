@@ -144,16 +144,71 @@
 .IDSDocsite_prev,
 .pythontimer_prev,
 .contactkeeper_prev,
+.qr_prev,
+.hierarchy_prev,
+.dash_prev,
+.rollup_prev,
 .gitindex_prev {
   width: 290px;
   height: 190px;
-  background-size: contain;
-  border-radius: 25%;
+  border-radius: 2px;
   border: solid 3px rgb(215, 228, 225);
+}
+.portfolio_prev:hover,
+.IDSDocsite_prev:hover,
+.pythontimer_prev:hover,
+.contactkeeper_prev:hover,
+.qr_prev:hover,
+.hierarchy_prev:hover,
+.dash_prev:hover,
+.rollup_prev:hover,
+.gitindex_prev:hover {
+  opacity: 0.7;
+}
+
+.project-link {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.project-description {
+  padding-left: 1em;
+  margin-top: 0.25rem;
 }
 
 .portfolio_prev {
   background: url("../img/portfoliowebsite.PNG") no-repeat;
+}
+
+.qr_prev {
+  background: url("../img/qr-component-sample.png") no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+.hierarchy_prev {
+  background: url("../img/hierarchy-restructure-table.gif") no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+.hierarchy_prev:hover {
+  opacity: 1;
+}
+
+.rollup_prev {
+  background: url("../img/rollup-table.gif") no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+.rollup_prev:hover {
+  opacity: 1;
+}
+
+.dash_prev {
+  background: url("../img/dashboard-component-sample.png") no-repeat;
+  background-size: contain;
+  background-position: center center;
 }
 
 .IDSDocsite_prev {
@@ -166,6 +221,9 @@
 
 .contactkeeper_prev {
   background: url("../img/contactkeeper.PNG") no-repeat;
+}
+.contactkeeper_prev:hover {
+  opacity: 1;
 }
 
 .gitindex_prev {
@@ -209,7 +267,7 @@ h6 {
 
 header {
   position: fixed;
-  z-index: 2;
+  z-index: 999;
   width: 100%;
 }
 
@@ -237,6 +295,10 @@ main#Home {
 }
 main#Home h1 {
   margin-top: 20vh;
+}
+main#Home .home-wrapper {
+  max-width: 50%;
+  margin: 0 auto;
 }
 
 .about-info {
