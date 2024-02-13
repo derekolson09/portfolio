@@ -2,18 +2,62 @@
 .IDSDocsite_prev,
 .pythontimer_prev,
 .contactkeeper_prev,
+.qr_prev,
+.hierarchy_prev,
+.dash_prev,
+.rollup_prev,
 .gitindex_prev  {
     width: 290px;
     height: 190px;
-    background-size: contain;   
-    border-radius: 25%;
-    border: solid 3px $secondary-color
+    border-radius: 2px;
+    border: solid 3px $secondary-color;
+
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
+.project-link {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.project-description {
+    padding-left: 1em;
+    margin-top: 0.25rem;
 }
 
 .portfolio_prev {
     background: url('../img/portfoliowebsite.PNG') no-repeat;
 }
+.qr_prev {
+    background: url('../img/qr-component-sample.png') no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+.hierarchy_prev {
+    background: url('../img/hierarchy-restructure-table.gif') no-repeat;
+    background-size: contain;
+    background-position: center center;
+    &:hover {
+        opacity: 1
+    }
+}
+.rollup_prev {
+    background: url('../img/rollup-table.gif') no-repeat;
+    background-size: contain;
+    background-position: center center;
+    &:hover {
+        opacity: 1
+    }
+}
 
+.dash_prev {
+    background: url('../img/dashboard-component-sample.png') no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
 .IDSDocsite_prev {
     background: url('../img/IDSdocsite.PNG') no-repeat;
 }
@@ -24,6 +68,9 @@
 
 .contactkeeper_prev {
     background: url('../img/contactkeeper.PNG') no-repeat;
+    &:hover {
+        opacity: 1
+    }
 }
 
 .gitindex_prev {

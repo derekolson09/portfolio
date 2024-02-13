@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
+  <link rel="stylesheet" href="./css/dashboard-component-structure.css">
+  <link rel="stylesheet" href="./css/child-card.css">
+  <link rel="stylesheet" href="./css/header-card.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Derek Olson | Time tracking dashboard</title>
+</head>
+<body>
+  <header>
+    <div class="menu-btn">
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+    </div>
+
+    <nav class="menu">
+        <div class="menu-branding">
+            <div class="portrait">
+            </div>
+            <div class="portrait_sm">
+            </div>
+        </div>
+
+        <ul class="menu-nav">
+            <li class="nav-item">
+                <a href="./index.html" class="nav-link">
+                    Home
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="./about.html" class="nav-link" id="active">
+                    About Me
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="./work.html" class="nav-link">
+                    My Work
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="./contact.html" class="nav-link">
+                    Contact
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+  <main class="content">
+    <div class="container">
+      <div class="flex-container">
+        <div class="header-card">
+          <div class="user-header">
+            <div class="header-icon-container">
+              <img class="header-icon" src="./img/professional_portrait.png" alt="user-image" />
+            </div>
+            <div class="user-info">
+              <div class="user-info-sub-header">
+                Report for
+              </div>
+              <div class="user-name">
+                Derek Olson
+              </div>
+            </div>
+          </div>
+          <div class="header-card-body">
+            <ul>
+              <li id="daily-unit" class="daily-unit card-time-unit">Daily</li>
+              <li id="weekly-unit" class="weeekly-unit card-time-unit active">Weekly</li>
+              <li id="monthly-unit" class="monthly-unit card-time-unit">Monthly</li>
+            </ul>
+          </div>
+        </div>
+        <div class="info-cards-container">
+          <div id="row-1" class="info-row">
+            <div id="work-card" class="child-card">
+              <div class="info-card-header work">
+                <img src="./img/icon-work.svg" alt="Suitcase Icon" class="info-card-header-icon">
+              </div>
+              <div class="info-card-body">
+                <div class="title-row">
+                  <div class="title">Work</div>
+                  <img class="options" src="./img/icon-ellipsis.svg" alt="Elipsis Icon" />
+                </div>
+                <div class="hours-container">
+                  <div class="hours-row"><span id="work-current">32</span>hrs</div>
+                  <div class="additional-info-row">Previous <span id="time-unit">Week</span> - <span id="work-previous">36</span>hrs</div>
+                </div>
+              </div>
+            </div>
+            <div id="play-card" class="child-card">
+              <div class="info-card-header play">
+                <img src="./img/icon-play.svg" alt="Game Controller Icon" class="info-card-header-icon">
+              </div>
+              <div class="info-card-body">
+                <div class="title-row">
+                  <div class="title">Play</div>
+                  <img class="options" src="./img/icon-ellipsis.svg" alt="Elipsis Icon" />
+                </div>
+                <div class="hours-container">
+                  <div class="hours-row"><span id="play-current">10</span>hrs</div>
+                  <div class="additional-info-row">Previous <span id="time-unit">Week</span> - <span id="play-previous">8</span>hrs</div>
+                </div>
+              </div>
+            </div>
+            <div id="study-card" class="child-card">
+              <div class="info-card-header study">
+                <img src="./img/icon-study.svg" alt="Open Book Icon" class="info-card-header-icon">
+              </div>
+              <div class="info-card-body">
+                <div class="title-row">
+                  <div class="title">Study</div>
+                  <img class="options" src="./img/icon-ellipsis.svg" alt="Elipsis Icon" />
+                </div>
+                <div class="hours-container">
+                  <div class="hours-row"><span id="study-current">4</span>hrs</div>
+                  <div class="additional-info-row">Previous <span id="time-unit">Week</span> - <span id="study-previous">7</span>hrs</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="row-2" class="info-row">
+            <div id="exercise-card" class="child-card">
+              <div class="info-card-header exercise">
+                <img src="./img/icon-exercise.svg" alt="Man Running Icon" class="info-card-header-icon">
+              </div>
+              <div class="info-card-body">
+                <div class="title-row">
+                  <div class="title">Excercise</div>
+                  <img class="options" src="./img/icon-ellipsis.svg" alt="Elipsis Icon" />
+                </div>
+                <div class="hours-container">
+                  <div class="hours-row"><span id="exercise-current">4</span> hrs</div>
+                  <div class="additional-info-row">Previous <span id="time-unit">Week</span> - <span id="exercise-previous">5</span>hrs</div>
+                </div>
+              </div>
+            </div>
+            <div id="social-card" class="child-card">
+              <div class="info-card-header social">
+                <img src="./img/icon-social.svg" alt="Chat Message Bubbles Icon" class="info-card-header-icon">
+              </div>
+              <div class="info-card-body">
+                <div class="title-row">
+                  <div class="title">Social</div>
+                  <img class="options" src="./img/icon-ellipsis.svg" alt="Elipsis Icon" />
+                </div>
+                <div class="hours-container">
+                  <div class="hours-row"><span id="social-current">5</span>hrs</div>
+                  <div class="additional-info-row">Previous <span id="time-unit">Week</span> - <span id="social-previous">10</span>hrs</div>
+                </div>
+              </div>
+            </div>
+            <div id="self-card-card" class="child-card">
+              <div class="info-card-header self-care">
+                <img src="./img/icon-self-care.svg" alt="Heart Symbol Icon" class="info-card-header-icon">
+              </div>
+              <div class="info-card-body">
+                <div class="title-row">
+                  <div class="title">Self Care</div>
+                  <img class="options" src="./img/icon-ellipsis.svg" alt="Elipsis Icon" />
+                </div>
+                <div class="hours-container">
+                  <div class="hours-row"><span id="self-care-current">2</span>hrs</div>
+                  <div class="additional-info-row">Previous <span id="time-unit">Week</span> - <span id="self-care-previous">2</span>hrs</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <footer class="footer">
+    <p>Coded by <a href="index.html">Derek Olson</a> © <span id="copyright-date">2024</span>.</p>
+  </footer>
+  <script src="js/main.js"></script>
+  <script src="js/copyright.js"></script>
+  <script src="js/eventhandlers.js"></script>
+</body>
+</html>

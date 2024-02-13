@@ -1,0 +1,124 @@
+.child-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 225px;
+}
+
+.info-card-header {
+    position: relative;
+    z-index: 1;
+    border-radius: 10px;
+    padding-right: 1em;
+    height: 50px;
+}
+
+.title {
+    font-size: 16px;
+}
+
+.title-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hours-row {
+    font-size: 3rem;
+    font-weight: 100;
+    margin-top: 1rem;
+}
+
+.additional-info-row {
+    font-size: 0.75rem;
+    margin-top: 0.75rem;
+    color: hsl(236, 100%, 87%);
+}
+
+.info-card-body {
+    position: relative;
+    z-index: 2;
+    padding-top: 1.5rem;
+    padding-bottom: 1.75rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    border-radius: 10px;
+    margin-top: -0.75rem;
+    background-color: hsl(235, 46%, 20%)
+}
+
+.info-card-header-icon {
+    width: 60px;
+    float: right;
+}
+
+.work {
+    background-color: hsl(15, 100%, 70%);
+}
+
+.play {
+    background-color:  hsl(195, 74%, 62%);
+}
+
+.study {
+    background-color: hsl(348, 100%, 68%);
+}
+
+.exercise {
+    background-color: hsl(145, 58%, 55%);
+}
+
+.social {
+    background-color: hsl(264, 64%, 52%);
+}
+
+.self-care {
+    background-color: hsl(43, 84%, 65%);
+}
+
+
+@media screen and (max-width: 950px) {
+    .child-card {
+        max-width: 50%;
+        margin-right: 0;
+        margin-top: 1em;
+    }
+    .info-card-body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .title-row {
+        display: inline-flex;
+        width: 100%;
+    }
+
+    .hours-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .hours-row {
+        width: 50%;
+        font-size: 2rem;
+    }
+    
+    .additional-info-row {
+        width: 50%;
+        text-align: end;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .child-card {
+        max-width: 80%;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .child-card {
+        max-width: 100%;
+    }
+}

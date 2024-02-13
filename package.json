@@ -4,14 +4,12 @@
   "description": "Derek Olson's Responsive Website",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Hello test\"",
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "sass": "sass --watch scss:dist/css",
     "deploy": "gh-pages -d dist"
   },
   "author": "Derek Olson",
   "license": "MIT",
   "dependencies": {
-    "gh-pages": "^2.2.0",
-    "node-sass": "^4.13.0"
+    "gh-pages": "^2.2.0"
   }
 }

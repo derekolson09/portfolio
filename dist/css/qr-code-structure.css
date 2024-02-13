@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+}
+
+.main {
+    padding: 0;
+}
+
+.main-content {
+    --footer-height: 40px;
+    --content-background-color: rgb(104, 145, 133);
+    --font-weight-bold: 700;
+    --font-weight-body: 400;
+    --font-family: "Outfit";
+    --font-size: 15px;
+    
+    background-color: var(--content-background-color);
+    font-family: var(--font-family), sans-serif
+}
+
+.footer {
+    display: flex;
+    height: var(--footer-height);
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    height: calc(80vh - var(--footer-height));
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/qr-code-structure.css">
+  <link rel="stylesheet" href="./css/card.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Outfit">
+
+  <title>Derek Olson Developer | QR code component example</title>
+</head>
+<body>
+  <header>
+    <div class="menu-btn">
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+    </div>
+
+    <nav class="menu">
+        <div class="menu-branding">
+            <div class="portrait">
+            </div>
+            <div class="portrait_sm">
+            </div>
+        </div>
+
+        <ul class="menu-nav">
+            <li class="nav-item">
+                <a href="./index.html" class="nav-link">
+                    Home
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="./about.html" class="nav-link">
+                    About Me
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="./work.html" class="nav-link"  id="active">
+                    My Work
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="./contact.html" class="nav-link">
+                    Contact
+                </a>
+            </li>
+        </ul>
+    </nav>
+  </header>
+  <main class="main-content">
+    <section class="qr-code">
+      <div class="container">
+        <div class="card">
+          <div class="card-header">
+            <img class="qr-code-image" src="./img/image-qr-code.png" alt="Image QR Code" />
+          </div>
+          <div class="card-body">
+            <h1 class="card-title">Improving front-end skills by building projects</h1>
+            <p class="card-info">This is an example of a frontend QR code component built in raw HTML, CSS, and Javascript</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <p>Coded by <a href="index.html">Derek Olson</a> © <span id="copyright-date">2024</span>.</p>
+  </footer>
+  <script src="js/main.js"></script>
+  <script src="js/copyright.js"></script>
+</body>
+</html>

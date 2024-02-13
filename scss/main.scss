@@ -40,7 +40,7 @@ h6 {
 }
 header {
     position: fixed;
-    z-index: 2;
+    z-index: 999;
     width: 100%;
 }
 
@@ -75,6 +75,10 @@ main {
         h1 {
             margin-top: 20vh;
         };
+        .home-wrapper {
+            max-width: 50%;
+            margin: 0 auto;
+        }
     }
 }
 
